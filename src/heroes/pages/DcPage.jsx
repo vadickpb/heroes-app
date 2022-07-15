@@ -1,7 +1,11 @@
+import HeroesList from "../components/HeroesList"
+import { getHeroesByPublisher } from "../helpers/getHeroesByPublisher"
 
 const DcPage = () => {
     return (
-        <h1>DcPage</h1>
+        <>
+            <HeroesList  publisher = {'DC Comics'}/>
+        </>
     )
 }
 
