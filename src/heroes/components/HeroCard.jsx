@@ -13,7 +13,7 @@ const HeroCard = ({
 
     return (
         <div className="col">
-            <div className="card">
+            <div className="card shadow">
 
                 <div className="row no-gutters">
 
