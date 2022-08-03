@@ -1,4 +1,5 @@
 import React from 'react'
+import { AuthProvider } from './auth/context/AuthProvider'
 
 // import {NavBar} from './ui'
 import AppRouter from './router/AppRouter'
@@ -6,8 +7,9 @@ import AppRouter from './router/AppRouter'
 const HeroesApp = () => {
     return (
         <>
-            {/* <NavBar /> */}
-            <AppRouter />
+            <AuthProvider>
+                <AppRouter />
+            </AuthProvider>
         </>
     )
 }
